@@ -161,9 +161,9 @@ Està compost de diferents mòduls (vendes, producció, logística, comptabilita
 * **Problemes relacionats amb les dades:** Problemes en la migració de dades ja existents, dades incompletes, errors d’organització de dades, etc.  
 * **Problemes amb la mentalitat de l’empresa:** És possible que certs departaments de l’empresa no vegin les avantatges de la implantació d’un ERP.  
 * **Treballadors:**  
-- És possible trobar-se amb treballadors que estiguin en contra de la implementació de noves tecnologies volen mantenir les antigues o inclús, en paper.  
-- No donar formació als treballadors.  
-- Por a perdre el lloc de treball.
+ - És possible trobar-se amb treballadors que estiguin en contra de la implementació de noves tecnologies volen mantenir les antigues o inclús, en paper.  
+ - No donar formació als treballadors.  
+ - Por a perdre el lloc de treball.
 
 ## **Mòduls d'un ERP**
 
