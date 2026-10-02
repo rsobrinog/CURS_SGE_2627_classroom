@@ -119,6 +119,8 @@ Donen solució a tasques concretes en una empresa genèrica global o d’un sect
 
 La idea és oferir un paquet que faci les funcions tan genèricament com sigui possible perquè es pugui usar en diferents empreses.
 
+Els seus avantatges són:
+
 * Abaratir molt els costos perquè el programari ja està desenvolupat i provat.  
 * Reduir el temps d’implantació del programari.
 
@@ -216,7 +218,7 @@ Alguns dels sistemes ERP més utilitzats actualment són:
 
 * **SAP S/4HANA / SAP Business One** (SAP SE): ERP propietari, orientat a grans empreses (S/4HANA) i PIMES (Business One).  
 * **Microsoft Dynamics 365** (Microsoft): ERP propietari en format subscripció SaaS, molt integrat amb l’ecosistema Microsoft (Office 365, Teams, Power BI).  
-* **Odoo** (Odoo S.A.): ERP modular amb versió Community (codi obert, gratuïta) i versió Enterprise (propietària, per subscripció). Molt utilitzat en PIMES.  
+* **Odoo** (Odoo S.A.): ERP modular amb versió **Community** (codi obert, llicència LGPLv3 — lliure d'ús també en entorns comercials, sense cost de llicència) i versió **Enterprise** (propietària, per subscripció, que hi afegeix mòduls exclusius, suport i migracions entre versions). Molt utilitzat en PIMES. "Sense cost de llicència" no vol dir "sense cost": l'allotjament, la implantació i el manteniment són la part gran de la factura, i el programa de Partners oficials d'Odoo obliga a comercialitzar subscripcions Enterprise.  
 * **Oracle NetSuite** (Oracle): ERP natiu al núvol (SaaS), orientat a PIMES i empreses mitjanes.  
 * **Sage 200/X3** (Sage Group): ERP propietari orientat principalment a PIMES.  
 * **Openbravo** (Openbravo): ERP de codi obert/propietari especialitzat en retail i distribució.
@@ -246,8 +248,8 @@ L'avantatge d'aquests sistemes és que són solucions específiques per a un tip
 
 Un ERP horitzontal és **genèric i modular**, pensat per adaptar-se a qualsevol tipus d’empresa, independentment del sector.
 
-* El temps d'implantació es redueix considerablement, ja que els mòduls estan adaptats a les necessitats del negoci.  
-* Cost inferior ja que els horitzontals s'han d'adaptar a les necessitats de l'empresa.
+* El temps d'implantació es redueix considerablement, ja que els mòduls ja estan desenvolupats i no cal construir-los a mida.  
+* Cost de llicència inferior, ja que el desenvolupament s'amortitza entre moltíssims clients (encara que el cost de parametrització i adaptació pot ser més elevat).
 
 **Característiques:**
 
