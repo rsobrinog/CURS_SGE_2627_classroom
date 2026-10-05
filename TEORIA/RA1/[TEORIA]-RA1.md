@@ -184,7 +184,7 @@ Mòduls més comuns d'un ERP:
 * Recursos Humans  
 * TPV (Terminal punto de venta)  
 * CRM (Customer Relationship Management. Gestió de la relació amb el client)  
-* MRP (Material Resource Planning relaciona Compres, Vendes, Stock, Producció..)  
+* MRP (Material Requirements Planning): relaciona Compres, Vendes, Stock, Producció..  
 * Tasques de reporting i intel·ligència del negoci BI  
 * Anàlisi de competidors
 
