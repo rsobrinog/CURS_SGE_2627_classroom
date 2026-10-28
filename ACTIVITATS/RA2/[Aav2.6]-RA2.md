@@ -14,8 +14,8 @@ RA2: Implanta sistemes ERP-CRM interpretant la documentació tècnica i identifi
  - Entregar al Moodle l'enllaç del github.
  - Github:
    - Treballar en el mateix repositori de la **RA1**.
-   - Crear una branca (al terminal) de nom **ra2** i ubicar-se a la branca (**git checkout ra2**)
-   - Al acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
+   - Treballar en la branca **ra2**.
+   - En acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
 
 ## AVALUACIÓ
 
@@ -32,12 +32,15 @@ RA2: Implanta sistemes ERP-CRM interpretant la documentació tècnica i identifi
 
 Si no ho heu fet ja a l'activitat 2.3, compartiu l'accés a la vostra instal·lació d'Odoo a través de la xarxa local (IP + port, regles de firewall) i comproveu-ho des d'un altre dispositiu.
 
+**IMPORTANT!!** Si a la xarxa del centre els dispositius no es veuen entre ells, feu la prova connectant els dos dispositius a la xarxa de dades mòbils d’un mòbil (punt d’accés) o feu-la a casa.
+
 ### 2. Usuari de tipus Portal
 
 1. Creeu un contacte (client) nou.
-2. Convertiu-lo en usuari de tipus **Portal** (des de la fitxa del contacte, "Concedir accés al portal" o equivalent).
-3. Accediu a Odoo amb aquest usuari (en una finestra privada del navegador) i compareu què pot veure respecte a un usuari intern normal.
-4. Expliqueu (3-4 línies) per a quins casos d'ús serveix un usuari de portal.
+2. Convertiu-lo en usuari de tipus **Portal** (des de la fitxa del contacte, "Concedir accés al portal" o equivalent). El contacte ha de tenir un correu al camp *Email*, que serà el seu usuari.
+3. Com que no tenim cap servidor de correu configurat, el contacte no rebrà el correu d'invitació per triar la contrasenya. Poseu-li-la vosaltres des de **Settings > Users & Companies > Users** (traieu el filtre per veure també els usuaris de portal), obrint l'usuari i fent servir **Change password**.
+4. Accediu a Odoo amb aquest usuari (en una finestra privada del navegador) i compareu què pot veure respecte a un usuari intern normal.
+5. Expliqueu (3-4 línies) per a quins casos d'ús serveix un usuari de portal.
 
 ### 3. Accés extern segur (HTTPS)
 

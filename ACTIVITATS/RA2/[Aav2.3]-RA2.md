@@ -15,7 +15,7 @@ RA2: Implanta sistemes ERP-CRM interpretant la documentació tècnica i identifi
  - Github:
    - Treballar en el mateix repositori de la **RA1**.
    - Treballar en la branca **ra2**.
-   - Al acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
+   - En acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
 
 ## AVALUACIÓ
 
@@ -51,4 +51,7 @@ Suposeu que un company vostre, a la mateixa xarxa local, vol accedir també al v
 
 1. Seguiu els passos ja vistos a la teoria (RA2) per **compartir l'accés a l'Odoo a través de la xarxa local** (regles de firewall, IP i port).
 2. Comproveu, des d'un altre dispositiu de la mateixa xarxa (mòbil, un altre PC), que podeu accedir-hi.
+
+   **IMPORTANT!!** Si a la xarxa del centre els dispositius no es veuen entre ells, feu la prova connectant els dos dispositius a la xarxa de dades mòbils d’un mòbil (punt d’accés) o feu-la a casa.
+
 3. Expliqueu per què, un cop fet això, la vostra instal·lació ha passat de comportar-se com un **monolloc** a comportar-se com un **client-servidor**.

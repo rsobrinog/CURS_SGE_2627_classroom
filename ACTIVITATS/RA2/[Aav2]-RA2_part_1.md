@@ -14,8 +14,8 @@ RA2: Implanta sistemes ERP-CRM interpretant la documentació tècnica i identifi
  - Entregar al Moodle l'enllaç del github.
  - Github:
    - Treballar en el mateix repositori de la **RA1**.
-   - Crear una branca (al terminal) de nom **ra2** i ubicar-se a la branca (**git checkout ra2**).
-   - Al acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
+   - Crear una branca (al terminal) de nom **ra2** (**git branch ra2**) i ubicar-se a la branca (**git checkout ra2**).
+   - En acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
 
 ## AVALUACIÓ
 
@@ -48,20 +48,20 @@ Crear una empresa fictícia que us agradi i recrear els seus processos i funcion
 * Departaments.  
 * Productes/serveis.  
 * Treballadors.  
-* Processos: fabricació, recursos humans, informes.  
+* Processos (fabricació, si escau, recursos humans, informes).  
 * Explicació d’un flux complet:  
   * Comanda de client → compra a proveïdor → entrega → factura.  
 * Diagrama amb [Drawio](https://www.drawio.com/) per ajudar-vos.
 
 # **Part 2 - Implantació:**
 
-* Crear la BBDD  
+* Crear la BD  
 * Activar els mòduls corresponents  
 * Crear els proveïdors  
 * Crear els productes o serveis  
-* Crear el clients  
+* Crear els clients  
 * Crear usuaris / empleats
 
 # **Part 3 - Gestió:**
 
-Guia explicativa acompañada de captures de pantalla del flux de la vostra empresa desde el moment d’una compra o contractació d’un servei fins al cobrament. Simple pero entendible.
+Guia explicativa acompanyada de captures de pantalla del flux de la vostra empresa des del moment d’una compra o contractació d’un servei fins al cobrament. Simple però entenedora.

@@ -14,8 +14,8 @@ RA2: Implanta sistemes ERP-CRM interpretant la documentació tècnica i identifi
  - Entregar al Moodle l'enllaç del github.
  - Github:
    - Treballar en el mateix repositori de la **RA1**.
-   - Crear una branca (al terminal) de nom **ra2** i ubicar-se a la branca (**git checkout ra2**)
-   - Al acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
+   - Treballar en la branca **ra2**.
+   - En acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
 
 ## AVALUACIÓ
 
@@ -32,14 +32,14 @@ Partint d'una de les vostres bases de dades d'Odoo ja creades (amb dades):
 
 ### 1. Crear els tres entorns
 
-1. Dupliqueu la base de dades des del **Gestor de bases de dades** d'Odoo (Database Manager) per crear-ne dues còpies més, de manera que tingueu:
+1. Dupliqueu la base de dades des del **Gestor de bases de dades** d'Odoo (Database Manager) per crear-ne dues còpies més (us demanarà la **Master Password**), de manera que tingueu:
    * `empresa_PROD` (la base de dades "real")
    * `empresa_PRE` (còpia per a proves abans de passar canvis a producció)
    * `empresa_DEV` (còpia per a desenvolupar/provar mòduls i configuracions noves)
 
 ### 2. Provar un canvi a l'entorn de desenvolupament
 
-1. A `empresa_DEV`, instal·leu o configureu alguna cosa nova (un mòdul, un camp personalitzat del RA4/RA5, o un canvi de configuració).
+1. A `empresa_DEV`, instal·leu o configureu alguna cosa nova (un mòdul o un canvi de configuració).
 2. Comproveu que funciona correctament **només** en aquest entorn.
 
 ### 3. Passar el canvi a preproducció i, finalment, a producció

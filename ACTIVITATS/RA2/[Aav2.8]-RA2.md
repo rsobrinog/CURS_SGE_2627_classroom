@@ -14,8 +14,8 @@ RA2: Implanta sistemes ERP-CRM interpretant la documentació tècnica i identifi
  - Entregar al Moodle l'enllaç del github.
  - Github:
    - Treballar en el mateix repositori de la **RA1**.
-   - Crear una branca (al terminal) de nom **ra2** i ubicar-se a la branca (**git checkout ra2**)
-   - Al acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
+   - Treballar en la branca **ra2**.
+   - En acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
 
 ## AVALUACIÓ
 

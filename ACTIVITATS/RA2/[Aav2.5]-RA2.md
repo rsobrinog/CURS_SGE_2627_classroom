@@ -14,8 +14,8 @@ RA2: Implanta sistemes ERP-CRM interpretant la documentació tècnica i identifi
  - Entregar al Moodle l'enllaç del github.
  - Github:
    - Treballar en el mateix repositori de la **RA1**.
-   - Crear una branca (al terminal) de nom **ra2** i ubicar-se a la branca (**git checkout ra2**)
-   - Al acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
+   - Treballar en la branca **ra2**.
+   - En acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
 
 ## AVALUACIÓ
 
@@ -36,9 +36,11 @@ Utilitzeu una de les instal·lacions d'Odoo que ja teniu (per exemple, la de l'a
 
 ### 2. Actualitzar un mòdul ja instal·lat
 
-1. Feu un petit canvi (per exemple, un camp nou o un canvi de text a una vista) en un mòdul que ja tingueu instal·lat (podeu reutilitzar un mòdul propi del RA5, o bé simular el canvi editant una vista des del Developer Mode com al RA4).
-2. Actualitzeu el mòdul des d'**Apps** (botó "Actualitzar" o, en mode desenvolupador, "Actualitzar llista d'aplicacions").
-3. Comproveu que el canvi s'ha aplicat correctament.
+1. Abans d'actualitzar, creeu algunes dades en un mòdul que ja tingueu instal·lat (per exemple, dos contactes al mòdul Contactes o una comanda a Vendes).
+2. Actualitzeu el mòdul des d'**Apps**: obriu el mòdul i feu servir l'opció **Actualitzar** (*Upgrade*). Si no us apareix, activeu el mode desenvolupador (Settings, al final de la pàgina, «Activar el mode desenvolupador»).
+3. Comproveu que el mòdul continua funcionant i que no s'ha perdut cap de les dades que havíeu creat.
+
+**IMPORTANT!!** L'opció «Actualitzar llista d'aplicacions» no actualitza cap mòdul: només refresca la llista de mòduls disponibles (per exemple, quan s'afegeix un mòdul nou a la carpeta d'addons).
 
 ### 3. Instal·lar un mòdul nou
 

@@ -15,7 +15,7 @@ RA2: Implanta sistemes ERP-CRM interpretant la documentació tècnica i identifi
  - Github:
    - Treballar en el mateix repositori de la **RA1**.
    - Treballar en la branca **ra2**.
-   - Al acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
+   - En acabar l'activitat, fusionar la branca **ra2** a la branca **main** del github.    
 
 ## AVALUACIÓ
 
@@ -29,18 +29,18 @@ RA2: Implanta sistemes ERP-CRM interpretant la documentació tècnica i identifi
 
 # **1. Context**
 
-Treballareu amb **TechNova Solutions**, una empresa de Barcelona dedicada al desenvolupament de software i serveis IT. L’empresa ja està en funcionament i vol començar a utilitzar Odoo per gestionar les seves operacions internes: vendes, compres, projectes i relació amb clients i proveïdors.
+Treballareu amb **TechNova Solutions**, una empresa de Barcelona dedicada al desenvolupament de programari i serveis IT. L’empresa ja està en funcionament i vol començar a utilitzar Odoo per gestionar les seves operacions internes: vendes, compres, projectes i relació amb clients i proveïdors.
 
 A continuació tens tota la informació corporativa necessària per treballar. A partir d’aquest escenari, hauràs de configurar Odoo perquè l’empresa pugui operar amb normalitat. **No s’indica quins mòduls, usuaris o configuracions has d’activar: tu decideixes què cal fer.**
 
-# 
+**IMPORTANT!!** Les dades que no s’indiquen a l’enunciat (preus dels serveis i productes, dades fiscals i adreces de clients i proveïdors, etc.) us les heu d’inventar. Indiqueu-les a l’entrega amb el text **(dada inventada)**.
 
 # **2. Informació de l’empresa**
 
 ## **2.1 Dades generals**
 
 * **Nom:** TechNova Solutions  
-* **Sector:** Desenvolupament de software i serveis IT  
+* **Sector:** Desenvolupament de programari i serveis IT  
 * **Seu:** C/ Aragó 155, Barcelona  
 * **CIF:** B12345678  
 * **Correu corporatiu:** info@technova.com  
@@ -80,10 +80,10 @@ A continuació tens tota la informació corporativa necessària per treballar. A
 
 # **3. Tasques a realitzar**
 
-A partir de la informació anterior, configura Odoo amb una nova BBDD perquè TechNova Solutions pugui operar correctament. Hauràs de decidir:
+A partir de la informació anterior, configura Odoo amb una nova BD perquè TechNova Solutions pugui operar correctament. Hauràs de decidir:
 
 * quins mòduls cal instal·lar,  
-* quins usuaris cal crear i amb quins permisos, (Només 4 necessitaràn accés a Odoo)  
+* quins usuaris cal crear i amb quins permisos, (només 4 treballadors necessitaran accés a Odoo)  
 * com s’han de configurar els serveis,  
 * i com s’han de gestionar les operacions.
 
@@ -103,7 +103,7 @@ Prepara Odoo perquè l’empresa pugui:
 * gestionar clients i proveïdors,  
 * gestionar serveis que es venen per hores.
 
-**Lliurable:** captura dels mòduls instal·lats i dels usuaris creats amb els seus permisos.
+**Lliurable:** captura dels mòduls instal·lats i dels usuaris creats amb els seus permisos, i justificació de quins 4 treballadors tenen accés a Odoo, per què, i per què els heu donat aquells permisos.
 
 ## **3.3 Operacions de venda**
 
