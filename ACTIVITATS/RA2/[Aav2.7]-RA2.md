@@ -32,7 +32,7 @@ Partint d'una de les vostres bases de dades d'Odoo ja creades (amb dades):
 
 ### 1. Crear els tres entorns
 
-1. Dupliqueu la base de dades des del **Gestor de bases de dades** d'Odoo (Database Manager) per crear-ne dues còpies més (us demanarà la **Master Password**), de manera que tingueu:
+1. Dupliqueu la base de dades des del **Gestor de bases de dades** d'Odoo (Database Manager: **Log out > Manage Databases**; vegeu la teoria del RA2, apartat «Accés al gestor de bases de dades») per crear-ne dues còpies més (us demanarà la **Master Password**), de manera que tingueu:
    * `empresa_PROD` (la base de dades "real")
    * `empresa_PRE` (còpia per a proves abans de passar canvis a producció)
    * `empresa_DEV` (còpia per a desenvolupar/provar mòduls i configuracions noves)

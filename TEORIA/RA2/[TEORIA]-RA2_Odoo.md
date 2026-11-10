@@ -22,7 +22,7 @@ Una vegada completat el procés d’instal·lació inicial, se’ns demana la cr
   * Crear noves bases de dades  
   * Esborrar bases de dades existents  
   * Fer còpies de seguretat o restaurar-les  
-* **Què hi posem:** Una contrasenya que recordem, per exemple `Mestra_2627` (dada inventada). Si Odoo ja n'hi proposa una de generada automàticament, la podem deixar, però **l’hem d’apuntar**.  
+* **Què hi posem:** Una contrasenya que recordem, per exemple `Mestra_2627` (dada inventada). Si Odoo ja n'hi proposa una de generada automàticament, la podem deixar, però **l’hem d’apuntar**. Si hem definit `admin_passwd` al fitxer `odoo.conf` (vegeu l'apartat «Fitxer de configuració odoo.conf»), aquí hem de posar aquella mateixa contrasenya.  
 * **Important:** No és la contrasenya d’un usuari dins d’Odoo, sinó una clau d’administració global per a la instància.
 
 2. Database Name (Nom de la base de dades)
@@ -106,6 +106,8 @@ data_dir = /var/lib/odoo
 
 * `admin_passwd`: és la **Master Password** (contrasenya mestra) que demanarà el *Database Manager*. `Mestra_2627` és una dada inventada; poseu-hi la vostra.
 * `db_host`, `db_port`, `db_user`, `db_password`: connexió amb el contenidor de PostgreSQL. Han de coincidir amb el servei `db` i les variables del `docker-compose.yml`.
+
+**IMPORTANT!!** Si al `odoo.conf` hi ha `admin_passwd`, al formulari de creació de la base de dades el camp **Master Password** ha de ser exactament aquesta contrasenya (en l'exemple, `Mestra_2627`). Si en poseu una altra, Odoo no crearà la base de dades. La resta de línies de l'`odoo.conf` no surten al formulari: el camp *Password* del formulari és la contrasenya de l'usuari administrador d'Odoo, no la de PostgreSQL (`db_password`).
 * `addons_path`: carpeta on Odoo busca mòduls addicionals (a més dels que porta de sèrie).
 * `data_dir`: carpeta on Odoo desa el *filestore* (adjunts i imatges).
 
@@ -127,6 +129,7 @@ services:
       - PASSWORD=odoo
     volumes:
       - ./config:/etc/odoo
+      - odoo-web-data:/var/lib/odoo
   db:
     image: postgres:15
     environment:
@@ -137,6 +140,7 @@ services:
       - odoo-db-data:/var/lib/postgresql/data
 volumes:
   odoo-db-data:
+  odoo-web-data:
 ```
 
 **4. Aplicar els canvis**
@@ -479,6 +483,15 @@ Perquè una oportunitat comercial normalment està vinculada a (a Odoo el client
 # Bases de dades
 
 Odoo permet crear diverses bases de dades, cadascuna amb una o diverses empreses associades. D’aquesta manera es crea un aïllament entre les empreses que corresponen a cada BD.
+
+## Accés al gestor de bases de dades
+
+Les bases de dades es gestionen des del *Database Manager* d’Odoo. Des de dins d’Odoo no hi ha cap menú que hi porti. S'hi pot accedir de dues maneres:
+
+* Escrivint la URL: `http://localhost:8069/web/database/manager`
+* Des de la web: tanquem la sessió (avatar de dalt a la dreta > **Log out**) i, a sota del formulari d’inici de sessió (o de la llista de bases de dades, si n’hi ha més d’una), fem clic a **Manage Databases**.
+
+Des del gestor podem crear, duplicar, fer còpies de seguretat (*Backup*), restaurar i esborrar bases de dades. Totes aquestes accions demanen la **Master Password**.
 
 ## Avantatges de fer servir diferents bases de dades
 
