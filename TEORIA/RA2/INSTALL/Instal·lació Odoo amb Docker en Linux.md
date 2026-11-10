@@ -42,6 +42,9 @@ services:
       - HOST=db
       - USER=odoo
       - PASSWORD=odoo
+    volumes:
+      - ./config:/etc/odoo
+      - odoo-web-data:/var/lib/odoo
   db:
     image: postgres:15
     environment:
@@ -52,6 +55,7 @@ services:
       - odoo-db-data:/var/lib/postgresql/data
 volumes:
   odoo-db-data:
+  odoo-web-data:
 ```
 
 **IMPORTANT!!** Si voleu fer servir un fitxer de configuració `odoo.conf` (per exemple, per fixar la Master Password), cal afegir un volum al servei `odoo` d'aquest `docker-compose.yml`. Vegeu la teoria del RA2, apartat «Fitxer de configuració odoo.conf».
