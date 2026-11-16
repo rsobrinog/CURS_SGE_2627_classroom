@@ -143,6 +143,16 @@ volumes:
   odoo-web-data:
 ```
 
+Els volums d'aquest fitxer són:
+
+* `./config:/etc/odoo`: la carpeta `config` del projecte (amb l'`odoo.conf`) substitueix `/etc/odoo` del contenidor.
+* `odoo-web-data:/var/lib/odoo`: guarda el *filestore* (adjunts, imatges, logos) i les sessions d'Odoo.
+* `odoo-db-data:/var/lib/postgresql/data`: guarda les bases de dades de PostgreSQL.
+
+**IMPORTANT!!** Sense el volum `odoo-web-data`, cada vegada que el contenidor d'Odoo es torna a crear (per exemple, després d'un `docker compose down` i `up -d`, o en reiniciar Docker), es perden les imatges i adjunts i les sessions: Odoo torna a demanar l'Email i el Password i els logos i imatges surten trencats.
+
+**IMPORTANT!!** No feu servir mai `docker compose down -v`: l'opció `-v` esborra els volums i, per tant, totes les bases de dades. Per aturar Odoo sense perdre res, feu servir `docker compose down` o `docker compose stop`.
+
 **4. Aplicar els canvis**
 
 Cada vegada que es modifica `odoo.conf` cal reiniciar el contenidor d'Odoo perquè el torni a llegir:

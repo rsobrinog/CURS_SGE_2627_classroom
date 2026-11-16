@@ -42,7 +42,7 @@ Per a **cada pas** del procés, ompliu una fitxa amb aquest format:
 Els passos mínims a documentar són:
 
 1. Comprovació dels requisits previs (SO, Docker instal·lat i en marxa).
-2. Creació del fitxer `docker-compose.yml` (contenidors `odoo` i `db`).
+2. Creació del fitxer `docker-compose.yml` (contenidors `odoo` i `db`), amb els volums `odoo-db-data` (bases de dades) i `odoo-web-data` (imatges, adjunts i sessions d'Odoo). Expliqueu per a què serveix cada volum (vegeu la teoria del RA2, apartat «Fitxer de configuració odoo.conf»).
 3. Creació del fitxer `odoo.conf` i muntatge al `docker-compose.yml` (vegeu la teoria del RA2, apartat «Fitxer de configuració odoo.conf»).
 4. Aixecar els contenidors (`docker compose up -d`).
 5. Primer accés des del navegador i creació de la base de dades de l'empresa (Master Password, i usuari i contrasenya de l'administrador: camps *Email* i *Password*).

@@ -58,7 +58,9 @@ volumes:
   odoo-web-data:
 ```
 
-**IMPORTANT!!** Si voleu fer servir un fitxer de configuració `odoo.conf` (per exemple, per fixar la Master Password), cal afegir un volum al servei `odoo` d'aquest `docker-compose.yml`. Vegeu la teoria del RA2, apartat «Fitxer de configuració odoo.conf».
+**IMPORTANT!!** Abans d'aixecar els contenidors, creeu la carpeta `config` al costat d'aquest `docker-compose.yml` amb el fitxer `odoo.conf` a dins (vegeu la teoria del RA2, apartat «Fitxer de configuració odoo.conf»).
+
+**IMPORTANT!!** El volum `odoo-web-data` guarda les imatges, adjunts i sessions d'Odoo; sense ell es perden cada vegada que es torna a crear el contenidor. No feu servir mai `docker compose down -v`, perquè esborra els volums i, amb ells, totes les bases de dades.
 
 ### **4. Aixecar els contenidors**
 
@@ -76,4 +78,4 @@ Obrir el navegador a:
 
 **http://localhost:8069**
 
-Configurar la base de dades inicial fent servir **admin** per a les contrasenyes i **mydb** com a nom de la base de dades, i començar a fer servir Odoo.
+Configurar la base de dades inicial i començar a fer servir Odoo. Al camp **Master Password** cal posar la mateixa contrasenya que l'`admin_passwd` de l'`odoo.conf`; els altres camps del formulari s'expliquen a la teoria del RA2.
