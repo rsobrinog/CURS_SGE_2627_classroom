@@ -614,6 +614,22 @@ Permet que altres persones accedeixin al teu Odoo des d’una altra màquina de 
 * Els dos PC han d’estar connectats a la mateixa xarxa.  
 * La connexió (wifi o cable) dels dos PC ha de tenir el perfil de xarxa privada activat.  
 * S’ha de crear una regla d’entrada al tallafoc del PC amfitrió que permeti l’entrada des de fora al port on estigui corrent l’Odoo.  
+  * **Windows (amb finestres):**
+    1. Obriu el tallafoc avançat: tecla `Windows + R`, escriviu `wf.msc` i premeu Enter (és el *Tallafoc del Windows Defender amb seguretat avançada*).
+    2. Al panell de l’esquerra, feu clic a **Regles d’entrada** i, al de la dreta, a **Regla nova...**
+    3. Tipus de regla: **Port** → Següent.
+    4. Protocol **TCP** i **Ports locals específics**: `8069` (o el port que hàgiu mapejat a Docker) → Següent.
+    5. Acció: **Permet la connexió** → Següent.
+    6. Perfil: marqueu només **Privat** (la xarxa de casa o de l’aula) → Següent.
+    7. Nom: per exemple `Odoo 8069` → Finalitza. La regla ha d’aparèixer a la llista amb una icona verda (activada).
+  * **Windows (amb una comanda):** obriu PowerShell com a administrador i executeu:
+
+    `New-NetFirewallRule -DisplayName "Odoo 8069" -Direction Inbound -Protocol TCP -LocalPort 8069 -Action Allow -Profile Private`
+  * **Linux (Ubuntu amb `ufw`):**
+
+    `sudo ufw allow 8069/tcp` i comproveu-ho amb `sudo ufw status` (ha de sortir `8069/tcp ALLOW`).
+  * Per saber la IP del PC amfitrió: a Windows, `ipconfig` (línia *Adreça IPv4*); a Linux, `ip a` (la de la targeta de xarxa, p. ex. `192.168.1.10`).
+  * Per esborrar la regla quan ja no la necessiteu: a `wf.msc`, botó dret sobre la regla → **Suprimeix**; a Linux, `sudo ufw delete allow 8069/tcp`.
 * Al PC convidat normalment no cal cap regla, perquè el tallafoc deixa sortir el trànsit per defecte. Si s’ha restringit, s’ha de crear una regla de sortida que permeti la connexió al port de l’Odoo del PC amfitrió.  
 * Al PC convidat accedim al PC amfitrió: **http://ip_de_l’amfitrio:port_que_sigui**  
   * Exemple: **http://192.168.1.10:8069** (8069 és el port per defecte d’Odoo; si a Docker l’heu mapejat a un altre port, per exemple el 8070, poseu aquell).
