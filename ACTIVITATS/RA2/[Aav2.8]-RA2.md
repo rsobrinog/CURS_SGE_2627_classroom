@@ -58,3 +58,7 @@ Documenteu **una incidència real** que us hagi sortit en qualsevol de les activ
 * **Missatge d'error / log:**
 * **Causa detectada:**
 * **Solució aplicada:**
+
+## Com entregar-ho
+
+Aquest document amb les 4 fitxes de prova, l'informe d'operacions i la fitxa d'incidència.

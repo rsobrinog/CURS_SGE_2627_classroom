@@ -50,3 +50,7 @@ Partint d'una de les vostres bases de dades d'Odoo ja creades (amb dades):
 ### 4. Reflexió
 
 Responeu per escrit (4-5 línies): quins avantatges té aquesta manera de treballar (DEV → PRE → PROD) enfront de fer els canvis directament a la base de dades de producció? Poseu un exemple concret de problema que aquesta pràctica evitaria.
+
+## Com entregar-ho
+
+Captura del Database Manager amb les tres bases de dades creades, captures del canvi provat a cada entorn, i la reflexió de l'apartat 4.

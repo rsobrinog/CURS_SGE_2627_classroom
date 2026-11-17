@@ -53,3 +53,7 @@ Responeu per escrit (5-6 línies):
 
 * Quina diferència hi ha entre **actualitzar un mòdul** i **actualitzar la versió d'Odoo** (per exemple, de la versió 17 a la 18)?
 * Quins riscos té actualitzar la versió major d'Odoo, i com es podrien mitigar?
+
+## Com entregar-ho
+
+Captures del backup, de l'actualització del mòdul (abans/després del canvi) i de la instal·lació del mòdul nou, més la resposta escrita de l'apartat 4.
