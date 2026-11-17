@@ -55,3 +55,7 @@ Suposeu que un company vostre, a la mateixa xarxa local, vol accedir també al v
    **IMPORTANT!!** Si a la xarxa del centre els dispositius no es veuen entre ells, feu la prova connectant els dos dispositius a la xarxa de dades mòbils d’un mòbil (punt d’accés) o feu-la a casa.
 
 3. Expliqueu per què, un cop fet això, la vostra instal·lació ha passat de comportar-se com un **monolloc** a comportar-se com un **client-servidor**.
+
+## Com entregar-ho
+
+La taula comparativa, les respostes de l'apartat 2, i una captura de l'accés des de l'altre dispositiu de l'apartat 3.

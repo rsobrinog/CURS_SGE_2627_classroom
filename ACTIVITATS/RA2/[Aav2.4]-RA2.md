@@ -48,3 +48,7 @@ Els passos mínims a documentar són:
 5. Primer accés des del navegador i creació de la base de dades de l'empresa (Master Password, i usuari i contrasenya de l'administrador: camps *Email* i *Password*).
 6. Instal·lació d'un primer mòdul (p. ex. Contactes).
 7. Comprovació que tot funciona: crear un registre de prova (un contacte).
+
+## Com entregar-ho
+
+Un document amb les 7 fitxes (o més, si voleu detallar-ho més) completades amb les captures corresponents.
