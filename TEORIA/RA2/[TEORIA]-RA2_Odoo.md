@@ -62,7 +62,7 @@ Una vegada completat el procés d’instal·lació inicial, se’ns demana la cr
 8. Demo data (Dades de demostració)
 
 * **Funció:** Si es marca, Odoo omple la base de dades amb dades d’exemple (clients, productes, comandes...) per poder provar els mòduls.  
-* **Què hi posem:** El marquem si la base de dades és per practicar. No el marquem si és per a l’empresa amb què treballarem a les activitats, perquè després aquestes dades no es poden esborrar fàcilment.
+* **Què hi posem:** La marquem. Així tenim clients, productes i comandes d’exemple per practicar amb els mòduls. Tingueu en compte que després aquestes dades no es poden esborrar fàcilment.
 
 Finalment, premem **Create database**. Pot trigar uns minuts; quan acabi, entrarem a Odoo amb l’usuari del camp *Email* i la contrasenya del camp *Password*.
 

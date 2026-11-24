@@ -33,10 +33,10 @@
 * Elimina los contenedores ya parados  
 * Conserva su estado, volúmenes y red  
   **docker compose rm \-v**  
-* Elimina los contenedores ya parados, estado y los volúmenes  
-* Conserva su red  
+* Elimina los contenedores ya parados y sus volúmenes anónimos  
+* Conserva los volúmenes nombrados en **docker-compose.yml** y la red  
   **docker compose rm \--volumes**  
-* Elimina los contenedores ya parados, estado, volúmenes y red
+* Es la forma larga de **-v**: hace exactamente lo mismo (contenedores parados y volúmenes anónimos; conserva los volúmenes nombrados y la red)
 
 **docker compose start**
 
